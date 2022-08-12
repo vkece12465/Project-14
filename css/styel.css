@@ -1,0 +1,586 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #f5f2f0;
+    font-family: "Poppins", sans-serif;
+    overflow: hidden;
+}
+.navbar-container .navbar {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+}
+.navbar-container .navbar .logo img {
+    width: 130px;
+}
+.navbar-container .navbar .list {
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+    font-size: 14px;
+    color: #696767;
+    align-items: center;
+    position: relative;
+}
+.navbar-container .navbar .list .list-item {
+    cursor: pointer;
+    padding: 10px;
+}
+.navbar-container .navbar .list .list-item:nth-child(2) {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 600;
+}
+.line {
+    position: absolute;
+    left: -280px;
+    width: 15rem;
+    border-radius: 40px;
+    height: 1.7px;
+    background-color: #333333;
+}
+main {
+    display: flex;
+}
+.left-image-container {
+    width: 30vw;
+}
+.left-image-container .left-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 35vw;
+    z-index: -1;
+}
+.left-image-container .left-image img {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    object-fit: cover;
+    left: 0;
+    bottom: 0;
+}
+.right-container {
+    display: flex;
+    position: relative;
+    width: 66vw;
+}
+.heading {
+    position: absolute;
+    left: 10%;
+    top: -40px;
+}
+.heading h1 {
+    font-size: 6.5rem;
+    font-weight: 900;
+    font-family: "Merriweather";
+    color: #333333;
+}
+.heading > h1{
+    color: transparent;
+    -webkit-text-stroke-width: .7px;
+    -webkit-text-stroke-color: black;
+}
+.heading div {
+    margin-left: 110px;
+    margin-top: -30px;
+    color: #333333;
+    display: flex;
+    align-items: center;
+}
+.heading div p {
+    font-size: 1.5rem;
+    font-weight: normal;
+    line-height: 30px;
+    color: #898888;
+    padding-left: 40px;
+    padding-top: 30px;
+}
+.right-container .btn-wrapper {
+    position: absolute;
+    right: 0;
+    bottom: -70px;
+    right: -190px;
+}
+.right-container .btn-wrapper button {
+    background-color: #333333;
+    color: #FFFFFF;
+    padding: 17px 78px;
+    border: none;
+    font-size: 18px;
+    font-weight: normal;
+    cursor: pointer;
+}
+.social-icons {
+    position: absolute;
+    right: -5px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.social-icons img {
+    width: 20px;
+}
+/* bottom  section */
+.bottom {
+    position: absolute;
+    top: 320px;
+    left: 100px;
+}
+.bottom ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.bottom ul li {
+    font-size: 1rem;
+    list-style-type: none;
+    color: #868686;
+    display: flex;
+    align-items: center;
+}
+.bottom ul li:not(:last-child) {
+    padding-bottom: 28px;
+}
+.bottom ul li span {
+    background-color: #868686;
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    display: inline-block;
+    vertical-align: center;
+    margin-right: 20px;
+}
+.active-item .dot {
+    background-color: #333333;
+}
+.active-item p {
+    color: #333333;
+}
+.bottom .line-dot {
+    height: 120%;
+    width: 1.55px;
+    background-color: #868686;
+    position: absolute;
+    left: 7px;
+    top: 20px;
+}
+.bottom-quote {
+    position: absolute;
+    left: 270px;
+    top: 0px;
+}
+.bottom-quote p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.img {
+    width: 400px;
+}
+.img  img {
+    width: 100%;
+    object-fit: contain;
+}
+.quote-icon .fa-quote-right {
+    color: #333333;
+    font-size: 40px;
+}
+.arrow {
+    position: absolute;
+    top: 120px;
+    right: -140px;
+}
+.arrow img {
+    width: 30px;
+}
+
+/************Media queris********/
+@media screen and (max-width:720px) {
+    body, html{
+      width: 100vw;
+      margin: 0;
+      padding: 0;
+      overflow-x:inherit;
+  }
+  .navbar-container .navbar {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin-right: 0px;
+    align-items: center;
+}
+.navbar-container .navbar .logo img {
+    width: 90px;
+    margin-left: 40px;
+}
+.navbar-container .navbar .list {
+    gap: 20px;
+
+}
+.navbar-container .navbar .list .list-item {
+    cursor: pointer;
+    padding: 0px;
+    margin-left: 0px;
+}
+.line {
+    left: -130px;
+    width: 6rem;
+}
+.left-image-container {
+    width: 30vw;
+}
+.left-image-container .left-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 35vw;
+    z-index: -1;
+}
+.left-image-container .left-image img {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    object-fit:cover;
+}
+.right-container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    max-width: 100%;
+}
+.heading {
+    position: absolute;
+    left: 0;
+    top: 0px;
+}
+.heading h1 {
+    font-size: 2rem;
+    margin-left: 80px;
+}
+.heading div {
+    margin-left: 0px;
+    margin-top: 0px;
+    color: #333333;
+    display: flex;
+}
+.heading div p {
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 30px;
+    color: #898888;
+    padding: 0px 0px 0px 40px;
+}
+.right-container .btn-wrapper {
+    position: absolute;
+    right: 0;
+    bottom: -70px;
+    right: -190px;
+}
+.right-container .btn-wrapper button {
+    background-color: #333333;
+    color: #FFFFFF;
+    padding: 15px 30px;
+    border: none;
+    font-size: 14px;
+    font-weight: normal;
+    margin-right: 60px;
+    cursor: pointer;
+}
+.social-icons {
+    margin-right: 0px;
+    gap: 30px;
+}
+.social-icons img {
+    width: 15px;
+}
+/* bottom  section */
+.bottom {
+    position: absolute;
+    top: 230px;
+    left: 100px;
+}
+.bottom ul li {
+    font-size: .7rem;
+    margin-left: -10px;
+}
+.bottom ul li:not(:last-child) {
+    padding-bottom: 20px;
+}
+.active-item .dot {
+    background-color: #333333;
+    margin-top: 120px;
+}
+.active-item p {
+    color: #333333;
+    margin-top: 120px;
+}
+.bottom .line-dot {
+    height: 83%;
+    width: 1.55px;
+    margin: 115px 0px 0px -10px;
+    left: 7px;
+    top: 20px;
+}
+.bottom-quote {
+    left: 140px;
+}
+.bottom-quote p {
+    font-size: 14px;
+}
+.img {
+    width: 200px;
+}
+.img  img {
+    width: 100%;
+    object-fit: cover;
+}
+.arrow {
+    position: absolute;
+    top: 200px;
+    right: -40px;
+}
+}
+/************Media queris 440********/
+@media screen and (max-width:440px) {
+    body, html{
+      width: 100vw;
+      margin: 0;
+      padding: 0;
+      overflow-x:inherit;
+  }
+  .navbar-container .navbar {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    align-items: center;
+}
+.navbar-container .navbar .logo img {
+    width: 80px;
+    margin-left: 0px;
+}
+.navbar-container .navbar .list {
+    gap: 15px;
+}
+.line {
+    display: none;
+}
+.left-image-container {
+    width: 30vw;
+}
+.left-image-container .left-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 35vw;
+    z-index: -1;
+}
+.left-image-container .left-image img {
+    position: absolute;
+    width: 80%;
+    top: 0;
+}
+.heading {
+    position: absolute;
+    left: 10px;
+    top: 0px;
+}
+.heading h1 {
+    font-size: 1.5rem;
+    margin-left: 0px;
+}
+.heading div p {
+    font-size: .8rem;
+    line-height: 15px;
+}
+.right-container .btn-wrapper {
+    bottom: -70px;
+    right: -130px;
+}
+.right-container .btn-wrapper button {
+    padding: 10px 20px;
+}
+.social-icons {
+    margin-right: 20px;
+    gap: 10px;
+}
+.social-icons img {
+    width: 15px;
+}
+/* bottom  section */
+.bottom {
+    position: absolute;
+    top: 230px;
+    left: 100px;
+}
+.bottom ul li {
+    font-size: .7rem;
+    margin-left: -100px;
+}
+.bottom ul li p{
+    font-size: 8px;
+    margin-left: -10px;
+}
+.bottom ul li:not(:last-child) {
+    padding-bottom: 20px;
+}
+.active-item .dot {
+    background-color: #333333;
+    margin-top: 120px;
+}
+.active-item p {
+    color: #333333;
+    margin-top: 120px;
+}
+.bottom .line-dot {
+    height: 83%;
+    width: 1.55px;
+    margin: 115px 0px 0px -100px;
+    left: 7px;
+    top: 20px;
+}
+.bottom-quote {
+    left: 10px;
+}
+.bottom-quote p {
+    font-size: 10px;
+}
+.img {
+    width: 140px;
+}
+.img  img {
+    width: 100%;
+    object-fit: cover;
+}
+.arrow {
+    position: absolute;
+    top: 200px;
+    margin-left: -40px;
+}
+.arrow img{
+    width: 20px;
+    margin-left: -40px;
+}
+}
+/************Media queris 440********/
+@media screen and (max-width:415px) {
+    body, html{
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow-x:inherit;
+  }
+  .navbar-container .navbar {
+    margin-top: 20px;
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 0px;
+    padding: 0 10px;
+    align-items: center;
+}
+.navbar-container .navbar .logo img {
+    width: 80px;
+    margin-left: 0px;
+}
+.navbar-container .navbar .list {
+    gap: 10px;
+    margin-left: 20px;
+}
+
+.left-image-container .left-image {
+    height: 100vh;
+    height: 100%;
+    top: 0;
+}
+.left-image-container .left-image img {
+    position: absolute;
+    width: 90%;
+    height: 110%;
+    object-fit: cover;
+}
+.heading {
+    position: absolute;
+    left: 10px;
+    top: 100px;
+}
+.heading h1 {
+    font-size: 3rem;
+    margin-left: 0px;
+}
+.heading div p {
+    font-size: .8rem;
+    line-height: 15px;
+}
+.right-container .btn-wrapper {
+    position: absolute;
+    top: 120px;
+    right: 0px;
+    left: 40px;
+    width: 250px;
+}
+.right-container .btn-wrapper button {
+    padding: 7px 20px;
+    margin-right: 60px;
+}
+.social-icons {
+    margin:40px 20px 0px 0px;
+    gap: 50px;
+}
+.social-icons img {
+    width: 15px;
+}
+/* bottom  section */
+.bottom {
+    position: absolute;
+    top: 450px;
+    left: 100px;
+}
+.bottom ul li {
+    font-size: .7rem;
+    margin-left: -85px;
+}
+.bottom ul li p{
+    font-size: 8px;
+    margin-left: -10px;
+}
+.bottom ul li:not(:last-child) {
+    padding-bottom: 20px;
+}
+.active-item .dot {
+    background-color: #333333;
+    margin-top: 120px;
+}
+.active-item p {
+    color: #333333;
+    margin-top: 120px;
+}
+.bottom .line-dot {
+    height: 100%;
+    width: 1.55px;
+    margin: 115px 0px 0px -85px;
+    left: 7px;
+    top: 20px;
+}
+
+.bottom-quote p {
+    font-size: 12px;
+}
+
+}
